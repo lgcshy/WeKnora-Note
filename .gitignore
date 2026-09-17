@@ -1,0 +1,54 @@
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Editor / IDE ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---- 本地实验环境（不纳入版本控制）----
+# 自行 clone 的 WeKnora 源码副本
+/weknora/
+/tmp/
+/scratch/
+/data/
+/logs/
+
+# 环境变量与密钥（切勿提交）
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# 学习过程中的大文件产物
+*.pdf
+*.zip
+*.tar.gz
+!assets/**/*
+
+# ---- Go ----
+*.exe
+*.test
+*.out
+vendor/
+
+# ---- Node ----
+node_modules/
+dist/
+.npm/
+.pnpm-store/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---- 工具缓存 ----
+.cache/
