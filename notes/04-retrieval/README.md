@@ -18,7 +18,7 @@
 
 | 笔记 | 说明 |
 |------|------|
-| _待补充_ | |
+| [01 · 从召回到上下文：读懂 RRF 融合](01-hybrid-search-rrf.md) | 固定官方 v0.8.0：真实调用位置、输入输出、加权 RRF 手算、Go 实现与阈值/上下文边界；附理解自检 |
 
 ## 实验记录
 
@@ -30,7 +30,9 @@
 
 | 关注点 | 路径 |
 |--------|------|
-| 检索编排 | `internal/application/` |
+| 检索编排 | `internal/application/service/session_knowledge_qa.go`、`chat_pipeline/search.go` |
+| 双路召回与 RRF 融合 | `internal/application/service/knowledgebase_search.go`、`knowledgebase_search_fusion.go` |
+| rerank、正文合并与上下文 | `internal/application/service/chat_pipeline/` |
 | 检索工具 | `internal/searchutil/` |
 | 向量库适配 | `internal/infrastructure/` |
 | 文本处理 | `internal/textconv/` |
